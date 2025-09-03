@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clube Progresso - Um ambiente estruturado para diversão e relaxamento em Belo Horizonte">
+    <title>Clube Progresso - Lazer e Diversão em BH</title>
+    
+    <!-- Preload de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://api.whatsapp.com/send?phone=+5531992578399&text=Olá,%20gostaria%20de%20mais%20informações" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header id="mainHeader" class="fixed-top" style="background-color: rgba(0, 0, 0, 0);">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span>Clube</span> Progresso
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button> 
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clube">O Clube</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#eventos">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000" style="background-image: url(./src/01.JPG);">
+                    <div class="carousel-caption d-flex flex-column justify-content-center">
+                        <div class="container">
+                            <h1>Bem-vindo ao Clube Progresso</h1>
+                            <p class="lead">Um ambiente completo para diversão e relaxamento em Belo Horizonte</p>
+                            <div class="cta-buttons">
+                                <a href="#contato" class="btn btn-primary btn-lg">Visite-nos</a>
+                                <a href="#servicos" class="btn btn-outline-light btn-lg">Nossos Serviços</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000" style="background-image: url(./src/04.JPG);">
+                    <div class="carousel-caption d-flex flex-column justify-content-center">
+                        <div class="container">
+                            <h1>Natureza e Conforto</h1>
+                            <p class="lead">Desfrute de um cenário calmo e incrível com toda segurança</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000" style="background-image: url(./src/03.JPG);">
+                    <div class="carousel-caption d-flex flex-column justify-content-center">
+                        <div class="container">
+                            <h1>Eventos Especiais</h1>
+                            <p class="lead">Celebre conosco suas datas importantes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sobre o Clube -->
+    <section id="clube" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>O Clube Progresso</h2>
+                <p class="section-subtitle">Uma nova experiência na região da Pampulha</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="video-container mb-4 mb-lg-0">
+                        <iframe src="./src/club1.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; loop; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ps-lg-4">
+                        <h3 class="mb-3">Excelência em Lazer e Conforto</h3>
+                        <p>Junte sua família e amigos para curtir momentos inesquecíveis em nossa estrutura completa, projetada para oferecer conforto, segurança e diversão para todas as idades.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Área de lazer completa</li>
+                            <li><i class="fas fa-check-circle"></i> Chalés aconchegantes</li>
+                            <li><i class="fas fa-check-circle"></i> Piscinas para todas as idades</li>
+                            <li><i class="fas fa-check-circle"></i> Quadras esportivas</li>
+                            <li><i class="fas fa-check-circle"></i> Restaurante com cardápio variado</li>
+                            <li><i class="fas fa-check-circle"></i> Eventos especiais durante todo o ano</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section id="destaques" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Nossos Destaques</h2>
+                <p class="section-subtitle">Conheça o que temos de melhor para você</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Chalés</h3>
+                        <p>Acomodações confortáveis para um final de semana inesquecível em contato com a natureza.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Restaurante</h3>
+                        <p>Cardápio variado com pratos especiais preparados com ingredientes frescos e selecionados.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-swimming-pool"></i>
+                        </div>
+                        <h3>Área de Lazer</h3>
+                        <p>Piscinas, quadras esportivas e espaços para relaxar e se divertir com toda a família.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="eventos" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Próximos Eventos</h2>
+                <p class="section-subtitle">Participe das nossas programações especiais</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="event-card">
+                        <div class="event-content">
+                            <span>15</span>
+                            <span>Mar</span>
+                        </div>
+                        <div class="event-img" style="background-image: url('src/evento1.jpg');"></div>
+                        <div class="event-content">
+                            <h3>Campeonato de Natação</h3>
+                            <p>Participe do nosso tradicional campeonato com categorias para todas as idades.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="event-card">
+                        <div class="event-content">
+                            <span>10</span>
+                            <span>Abr</span>
+                        </div>
+                        <div class="event-img" style="background-image: url('src/evento2.jpg');"></div>
+                        <div class="event-content">
+                            <h3>Festa Junina</h3>
+                            <p>Final de semana com comidas típicas, brincadeiras e muita diversão.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="event-card">
+                        <div class="event-content">
+                            <span>22</span>
+                            <span>Mai</span>
+                        </div>
+                        <div class="event-img" style="background-image: url('src/evento3.jpg');"></div>
+                        <div class="event-content">
+                            <h3>Copa de Clubes</h3>
+                            <p>Torneio de futebol anual com times de toda a região. Inscreva-se já!</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="event-card">
+                        <div class="event-content">
+                            <span>12</span>
+                            <span>Out</span>
+                        </div>
+                        <div class="event-img" style="background-image: url('src/evento4.jpg');"></div>
+                        <div class="event-content">
+                            <h3>Dia das Crianças</h3>
+                            <p>Dia especial com brincadeiras, gincanas e atrações para os pequenos.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Nossos Serviços</h2>
+                <p class="section-subtitle">Tudo que você precisa para um dia perfeito</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('src/chale.jpg');"></div>
+                        <div class="service-content">
+                            <h3>Chalés</h3>
+                            <p>Acomodações confortáveis para um final de semana de descanso e lazer.</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Capacidade para até 6 pessoas</li>
+                                <li><i class="fas fa-check"></i> Ar condicionado</li>
+                                <li><i class="fas fa-check"></i> Fogão e frigobar</li>
+                            </ul>
+                            <a href="#contato" class="btn btn-primary">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('src/quiosque.jpg');"></div>
+                        <div class="service-content">
+                            <h3>Quiosques</h3>
+                            <p>Espaços exclusivos para associados com churrasqueira e área de convivência.</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Churrasqueira individual</li>
+                                <li><i class="fas fa-check"></i> Mesa e cadeiras</li>
+                                <li><i class="fas fa-check"></i> Tomadas e iluminação</li>
+                            </ul>
+                            <a href="#contato" class="btn btn-primary">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('src/restaurante.jpg');"></div>
+                        <div class="service-content">
+                            <h3>Restaurante</h3>
+                            <p>Cardápio variado com pratos especiais preparados por nossos chefs.</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Almoço executivo</li>
+                                <li><i class="fas fa-check"></i> Porções e lanches</li>
+                                <li><i class="fas fa-check"></i> Bebidas e sobremesas</li>
+                            </ul>
+                            <a href="#contato" class="btn btn-primary">Ver cardápio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Galeria</h2>
+                <p class="section-subtitle">Conheça nosso espaço através das imagens</p>
+            </div>
+            <div class="row gallery-grid">
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="gallery-item" data-src="src/01.JPG" data-caption="Vista do clube">
+                        <img src="./src/01.JPG" alt="Vista do clube" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="gallery-item" data-src="src/02.JPG" data-caption="Cascata do clube">
+                        <img src="./src/02.JPG" alt="Cascata do clube" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="gallery-item" data-src="src/03.JPG" data-caption="Chalés">
+                        <img src="./src/03.JPG" alt="Chalés" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="gallery-item" data-src="src/04.JPG" data-caption="Restaurante">
+                        <img src="./src/04.JPG" alt="Restaurante" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="gallery-item" data-src="src/05.JPG" data-caption="Área de lazer">
+                        <img src="./src/05.JPG" alt="Área de lazer" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="gallery-item" data-src="src/06.JPG" data-caption="Campo de futebol">
+                        <img src="./src/06.JPG" alt="Campo de futebol" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <img id="lightboxImg" class="lightbox-img" src="" alt="">
+            <div class="lightbox-nav lightbox-prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="lightbox-nav lightbox-next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="lightbox-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript para o Lightbox -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elementos do Lightbox
+            const lightboxModal = document.getElementById('lightboxModal');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxCaption = document.getElementById('lightboxCaption');
+            const lightboxClose = document.querySelector('.lightbox-close');
+            const lightboxPrev = document.querySelector('.lightbox-prev');
+            const lightboxNext = document.querySelector('.lightbox-next');
+            
+            // Todas as imagens da galeria
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            let currentIndex = 0;
+            
+            // Abrir o Lightbox ao clicar em uma imagem
+            galleryItems.forEach((item, index) => {
+                item.addEventListener('click', function() {
+                    currentIndex = index;
+                    const imgSrc = this.getAttribute('data-src');
+                    const imgCaption = this.getAttribute('data-caption');
+                    
+                    lightboxImg.src = imgSrc;
+                    lightboxCaption.textContent = imgCaption;
+                    lightboxModal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Impedir rolagem do corpo
+                    
+                    // Adicionar animação de fade-in
+                    lightboxImg.classList.add('fade-in');
+                    setTimeout(() => {
+                        lightboxImg.classList.remove('fade-in');
+                    }, 400);
+                });
+            });
+            
+            // Fechar o Lightbox
+            lightboxClose.addEventListener('click', function() {
+                lightboxModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restaurar rolagem do corpo
+            });
+            
+            // Também fechar ao clicar fora da imagem
+            lightboxModal.addEventListener('click', function(e) {
+                if (e.target === lightboxModal) {
+                    lightboxModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Navegar para a imagem anterior
+            lightboxPrev.addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+                updateLightboxImage();
+            });
+            
+            // Navegar para a próxima imagem
+            lightboxNext.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % galleryItems.length;
+                updateLightboxImage();
+            });
+            
+            // Navegação com teclado
+            document.addEventListener('keydown', function(e) {
+                if (!lightboxModal.classList.contains('active')) return;
+                
+                if (e.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+                    updateLightboxImage();
+                } else if (e.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % galleryItems.length;
+                    updateLightboxImage();
+                } else if (e.key === 'Escape') {
+                    lightboxModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Atualizar a imagem do lightbox
+            function updateLightboxImage() {
+                const item = galleryItems[currentIndex];
+                const imgSrc = item.getAttribute('data-src');
+                const imgCaption = item.getAttribute('data-caption');
+                
+                // Adicionar animação de fade-in
+                lightboxImg.classList.add('fade-in');
+                
+                lightboxImg.src = imgSrc;
+                lightboxCaption.textContent = imgCaption;
+                
+                setTimeout(() => {
+                    lightboxImg.classList.remove('fade-in');
+                }, 400);
+            }
+        });
+    </script>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>Perguntas Frequentes</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Qual o horário de funcionamento do clube?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Segunda e Terça - Fechado <br>
+                        Quarta a Domingo Aberto das 09:00h as 18:00h<br>
+                        Quinta Aberto das 09:00h as 21:30h Obs.: Piscina liberada conforme o tempo.<br> 
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Como faço para me tornar sócio do clube?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Para se tornar sócio, você pode entrar em contato com nosso departamento comercial pelo WhatsApp, pela portaria via telefone ou presencialmente.<br> Será necessário preencher um formulário e apresentar documentos pessoais. <br>Sendo eles:<br><br>
+                        Cópia da certidão de casamento e identidade<br>
+                        Cópia comprovante de residência<br>
+                        Cópia da certidão de nascimento (filhos)<br>
+                        1 foto 3x4 (carteirinha)<br><br>A aprovação da associação ocorre em até 7 dias úteis.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Como funciona a venda de convites?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        A venda de convites é feita na portaria do clube mediante a apresentação de documento com foto de todos, para as crianças apresentar certidão de nascimento.
+                        pagamentos em dinheiro e cartão, não aceitamos Pix. 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Como funciona a reserva de chalés?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        As reservas devem ser feitas via WhatsApp com antecedência mínima de 15 dias e máxima de 30 dias.<br> Check-in Sábado as 9h e Check-out Domingo as 17h.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Como funciona a reserva de quiosques?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Os quiosques são exclusivos para nossos associados, reservas devem ser feitas via WhatsApp pelo Titular da cota, em caso de desistência informar imediatamente para não sofrer penalidades.<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Contato -->
+    <section id="contato" class="section-padding bg-dark text-white">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Entre em Contato</h2>
+                <p class="section-subtitle">Estamos à disposição para melhor atendê-lo</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Endereço</h4>
+                                <p>Rua Luiz Antônio de Morais, 201 - Braúnas, Belo Horizonte - MG, 31370-430</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Telefone</h4>
+                                <p>(31) 3965-0915</p>
+                                <p><i class="fab fa-whatsapp"></i> (31) 99257-8399</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>contatoclubeprogresso@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Horário de Funcionamento</h4>
+                                <p>Quarta a Domingo: 09:00 - 18:00</p>
+                                <p>Quinta-feira: 09:00 - 21:30</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form id="contactForm" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Seu nome" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Seu email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Assunto">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- Mapa -->
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.9483060307707!2d-44.0112521!3d-19.842140099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6918567e90b73%3A0xca8c98224d2d01d7!2sClube%20progresso!5e0!3m2!1spt-BR!2sbr!4v1744904084580!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-darker text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Clube Progresso</h4>
+                    <p>Um ambiente completo para diversão e relaxamento em Belo Horizonte, com estrutura para toda a família.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/clubeprogresso/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=+5531992578399&text=Olá,%20gostaria%20de%20mais%20informações" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-title">Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#clube">O Clube</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicos">Chalés</a></li>
+                        <li><a href="#servicos">Quiosques</a></li>
+                        <li><a href="#servicos">Restaurante</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#contato">Associados</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> Clube Progresso. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+
+
+    
+</body>
+</html>
